@@ -157,3 +157,5 @@ authRoutes.get('/private', (req, res, next) => {
   // code 403 = Forbidden
   res.status(403).json({ message: 'Unauthorized' });
 });
+
+ module.exports = authRoutes;

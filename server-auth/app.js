@@ -16,8 +16,7 @@ const passport     = require('passport');
 // tell node to run the code contained in this file
 // this sets up passport and our strategy
 //**********************************************************
-const passportSetup = require('./config/passport-config');
-passportSetup(passport);
+require('./config/passport-config');
 
 mongoose.connect('mongodb://localhost/angular-server-auth');
 
