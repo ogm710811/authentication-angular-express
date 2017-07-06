@@ -38,11 +38,11 @@ const authRoutes = express.Router();
 
 /*******************************************************************************************************************/
 // ROUTES HERE ...
-/*******************************************************************************************************s************/
+/********************************************************************************************************************/
 // 1. The Sign Up POST route checks for a user with the same username and if it does not exist it creates a new one.
 authRoutes.post('/signup', (req, res, next) => {
-    const username = req.body.signupUsername;
-    const password = req.body.signupPassword;
+    const username = req.body.username;
+    const password = req.body.password;
 
     // don't let user submit blanck username and password
     // see that in this case we are responding with status(400).json()
