@@ -66,7 +66,7 @@ authRoutes.post('/signup', (req, res, next) => {
             // no problem so far, then we are good to go
             //********************************************************* 
             const salt      = bcrypt.genSaltSync(10);
-            const hashPass  = bcrypt.hashSync(signupPassword, salt);
+            const hashPass  = bcrypt.hashSync(password, salt);
 
             // create a new user (username and password)
             const theUser = new User({
